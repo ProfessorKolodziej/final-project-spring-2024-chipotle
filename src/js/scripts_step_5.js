@@ -24,4 +24,4 @@ addClickToggleBackground("choice_corn");
 addClickToggleBackground("choice_guac");
 addClickToggleBackground("choice_queso");
 addClickToggleBackground("choice_salsa");
-addClickToggleBackground("choice_green_salsa");
+addClickToggleBackground("choice_green-salsa");

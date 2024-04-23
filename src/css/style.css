@@ -8,12 +8,14 @@ primary color variable below.
 :root {
 	--color-primary: #AC2318;
 	--color-secondary: #D9D9D9;
+
 	background-color: #D9D9D9;
 }
 
 h1 {
 	color: var(--color-primary);
 }
+
 h2 {
 	color: black;
 }
@@ -31,9 +33,11 @@ h2 {
 	border-radius: 2em;
 	font-size: 40px
 }
+
 .start1:hover {
 	color: #AC2318;
 }
+
 .continue {
 	width: 100%;
 	display: flex;
@@ -42,14 +46,15 @@ h2 {
 	color: white;
 	font-size: 25px
 }
+
 .continue button {
 	margin-left: auto; 
 	margin-right: 0;
-	padding: 10px;
 	background-color: #441500;
 	border-radius: 2em;
 	padding: 1% 4%;  
 }
+
 .continue:hover {
 	color:#AC2318
 }
@@ -62,15 +67,18 @@ h2 {
 	color: white;
 	font-size: 25px;
 }
+
 .quit button {
 	background-color: #441500;
 	border-radius: 2em;
 	padding: 1% 4%; 
 }
+
 .quit:hover {
 	color:#AC2318
 }
-.play_again {
+
+.play-again {
 	width: 100%;
 	display: flex;
 	font-family: coiny;
@@ -78,23 +86,26 @@ h2 {
 	color: white;
 	font-size: 25px
 }
-.play_again button {
+
+.play-again button {
 	background-color: #441500;
 	border-radius: 2em;
 	padding: 1% 4%; 
 }
-.play_again:hover {
+
+.play-again:hover {
 	color:#AC2318
 }
 
 
-.food_grid ul {
+.food-grid ul {
 	display: flex;
 	width: 100%;
 	list-style: none;
 	justify-content: space-evenly;
 }
-.food_grid li {
+
+.food-grid li {
 	max-width: 100%;
 	height: auto;
 	padding: 20px;
@@ -102,108 +113,128 @@ h2 {
 
 }
 
-.sub_food_grid ul{
+.sub-food-grid ul{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* 3 columns */
 	grid-template-rows: repeat(2, 1fr); /* 2 rows */
 	list-style: none; /* Remove default list styling */
 }
 
-.sub_food_grid li {
+.sub-food-grid li {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
 }
-.sub_food_grid_two ul{
+
+.sub-food-grid-two ul{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr); /* 3 columns */
 	grid-template-rows: repeat(2, 1fr); /* 2 rows */
 	list-style: none; /* Remove default list styling */
 }
 
-.sub_food_grid_two li {
+.sub-food-grid-two li {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
 }
 
-.bowl1_image {
+.bowl1-image {
 	max-height: 100%;
 	width: 300px;
 }
-.burrito1_image {
+
+.burrito1-image {
 	max-height: 100%;
 	width: 300px;
 }
-.lifestyle_bowl_image {
+
+.lifestyle-bowl-image {
 	max-height: 100%;
 	width: 300px;
 }
-.brown_rice_image {
+
+.brown-rice-image {
 	max-height: 100%;
 	width: 200px;
 }
-.white_rice_image {
+
+.white-rice-image {
 	max-height: 100%;
 	width: 200px;
 }
-.black_beans_image {
+
+.black-beans-image {
 	max-height: 100%;
 	width: 200px;
 }
-.pinto_beans_image {
+
+.pinto-beans-image {
 	max-height: 100%;
 	width: 200px;
 }
-.steak_image {
+
+.steak-image {
 	max-height: 100%;
 	width: 150px;
 }
-.beef_image {
+
+.beef-image {
 	max-height: 100%;
 	width: 150px;
 }
-.veggies_image {
+
+.veggies-image {
 	max-height: 100%;
 	width: 150px;
 }
-.chicken_image {
+
+.chicken-image {
 	max-height: 100%;
 	width: 150px;
 }	
-.lettuce_image {
+
+.lettuce-image {
 	max-height: 100%;
 	width: 100px;
 }
-.sour_cream_image {
+
+.sour-cream-image {
 	max-height: 100%;
 	width: 100px;
 }
-.cheese_image {
+
+.cheese-image {
 	max-height: 100%;
 	width: 100px;
 }
-.hot_salsa_image {
+
+.hot-salsa-image {
 	max-height: 100%;
 	width: 100px;
 }
-.corn_image {
+
+.corn-image {
 	max-height: 100%;
 	width: 100px;
 }
-.guac_image {
+
+.guac-image {
 	max-height: 100%;
 	width: 100px;
 }
-.queso_image {
+
+.queso-image {
 	max-height: 100%;
 	width: 100px;
 }
-.salsa_image {
+
+.salsa-image {
 	max-height: 100%;
 	width: 100px;
 }
-.green_salsa_image {
+
+.green-salsa-image {
 	max-height: 100%;
 	width: 100px;
 }
