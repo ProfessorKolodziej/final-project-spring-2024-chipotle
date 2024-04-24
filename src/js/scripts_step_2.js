@@ -6,6 +6,7 @@ const UNSELECTED_COLOR = "white";
 
 
 document.getElementById("choice_white_rice").addEventListener("click", function() {
+    console.log(this)
     if (document.getElementById("choice_white_rice").style.background == SELECTED_COLOR) {
         document.getElementById("choice_white_rice").style.background=UNSELECTED_COLOR;
     } else {

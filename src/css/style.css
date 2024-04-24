@@ -206,3 +206,21 @@ h2 {
 	max-height: 100%;
 	width: 100px;
 }
+.chipotle_store {
+	max-height: 100%;
+	width: 100px;
+}
+#all_bowl {
+	max-height: 100%;
+	width: 500px;
+}
+
+svg image {
+	display: none;
+}
+
+svg #empty_bowl {
+	display:block;
+}
+	
+
