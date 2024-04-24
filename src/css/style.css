@@ -1,10 +1,3 @@
-/*
-CSS controls the styling of the page.
-You can write a color in directly, or use variables.
-Try changing the color from blue to red in the
-primary color variable below.
-*/
-
 :root {
 	--color-primary: #AC2318;
 	--color-secondary: #D9D9D9;
@@ -24,7 +17,6 @@ h2 {
 	font-family: coiny;
 
 }
-
 .start button {
 	background-color: #441500;
 	padding: 1% 4%;  
@@ -223,4 +215,35 @@ svg #empty_bowl {
 	display:block;
 }
 	
+.main_container {
+	display:block;	
+}
+
+.white_rice {
+	display:block;
+}
+
+.brown_rice {
+	display:none;
+}
+
+.black_beans {
+	display:block;
+}
+
+.brown_beans {
+	display:none;
+}
+.steak {
+	display:block;
+}
+.beef {
+	display:none;
+}
+.veggies {
+	display:block;
+}
+.chicken {
+	display:none;
+}
 

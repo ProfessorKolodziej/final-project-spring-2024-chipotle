@@ -1,26 +1,26 @@
+console.log
+let isClicked1 = true;
+let isClicked2 = true;
 
+const container1 = document.querySelector('#black_beans');
+const container2 = document.querySelector('#brown_beans');
 
-
-const SELECTED_COLOR = "grey";
-const UNSELECTED_COLOR = "white";
-
-
-
-
-document.getElementById("choice_black_beans").addEventListener("click", function() {
-    if (document.getElementById("choice_black_beans").style.background == SELECTED_COLOR) {
-        document.getElementById("choice_black_beans").style.background=UNSELECTED_COLOR;
-    } else {
-        document.getElementById("choice_black_beans").style.background=SELECTED_COLOR;
+const showAndHide = function(container){
+    if(container === container1){
+        if(isClicked1){
+            container.style.display = 'block';
+            isClicked1 = false;
+        }else{
+            container.style.display = 'none';
+            isClicked1 = true;
+        }
+    }else if(container === container2){
+        if(isClicked2){
+            container.style.display = 'block';
+            isClicked2 = false;
+        }else{
+            container.style.display = 'none';
+            isClicked2 = true;
+        }
     }
-    document.getElementById("choice_pinto_beans").style.background=UNSELECTED_COLOR;
-});
-
-document.getElementById("choice_pinto_beans").addEventListener("click", function() {
-    if (document.getElementById("choice_pinto_beans").style.background == SELECTED_COLOR) {
-        document.getElementById("choice_pinto_beans").style.background=UNSELECTED_COLOR;
-    } else {
-        document.getElementById("choice_pinto_beans").style.background=SELECTED_COLOR;
-    }
-    document.getElementById("choice_black_beans").style.background=UNSELECTED_COLOR;
-});
+}

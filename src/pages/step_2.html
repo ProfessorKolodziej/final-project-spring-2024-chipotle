@@ -39,16 +39,17 @@
   <image id="lettuce" width="692" height="754" transform="translate(5 99) scale(.87)" xlink:href="images/Lettuce.png"/>
   <image id="guac" width="1545" height="2000" transform="translate(122 329.33) rotate(-21.9) scale(.15 .19)" xlink:href="images/Veggies (13).png"/>
 </svg>	
-					<p> photo of bowl </p>	
-				</li>
+			</li>
 				<li>
 					<ul>
-						<li id="choice_white_rice">
+						<div id="choice_white_rice">
 							<img src="images/white_rice_image.png" alt="picture of white rice" class="white_rice_image">	
-						</li>
-						<li id="choice_brown_rice">
-							<img src="images/brown_rice_image.png" alt="picture of brown rice" class="brown_rice_image">	
-						</li>
+							<button onclick="showAndHide(container1)">Select</button>
+						</div>
+						<div id="choice_brown_rice">
+							<img src="images/brown_rice_image.png" alt="picture of brown rice" class="brown_rice_image">
+							<button onclick="showAndHide(container2)">Select</button>	
+						</div>
 					</ul>
 				</li>
 				
@@ -60,7 +61,7 @@
 			</button>
 		</div>
 	</main>
-	<script src="../js/scripts_step_2.js"></script>
+	<script defer src="../js/scripts_step_2.js"></script>
 
 </body>
 
