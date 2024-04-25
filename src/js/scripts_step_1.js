@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     imageBurrito.addEventListener("click", function() {
-        window.location.href = "step_3.html";
+        window.location.href = "new.html";
     });
 
     imageLifestyle_bowl.addEventListener("click", function() {

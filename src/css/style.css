@@ -202,32 +202,30 @@ h2 {
 	max-height: 100%;
 	width: 100px;
 }
+
 #all_bowl {
 	max-height: 100%;
 	width: 500px;
 }
 
-svg image {
-	display: none;
+#all_burrito {
+	max-height: 100%;
+	width: 500px;
 }
 
 svg #empty_bowl {
 	display:block;
 }
 	
+svg #tortilla {
+	display:block;
+}
+
+svg image {
+	display: none;
+}
+
 .main_container {
 	display:block;	
 }
 
-.steak {
-	display:block;
-}
-.beef {
-	display:none;
-}
-.veggies {
-	display:block;
-}
-.chicken {
-	display:none;
-}
