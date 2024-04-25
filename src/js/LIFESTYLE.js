@@ -52,29 +52,3 @@ function deselectAll() {
         container.style.display = 'none';
     });
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-    let sectionIndex = 1; // Initialize section index
-
-    // Function to show current section and hide others
-    function showSection(index) {
-        for (let i = 1; i <= 4; i++) {
-            document.getElementById('section' + i).style.display = i === index ? 'block' : 'none';
-        }
-    }
-
-    // Initial section display
-    showSection(sectionIndex);
-
-    // Back button event listener
-    document.getElementById('backBtn').addEventListener('click', function () {
-        sectionIndex = Math.max(1, sectionIndex - 1);
-        showSection(sectionIndex);
-    });
-
-    // Next button event listener
-    document.getElementById('nextBtn').addEventListener('click', function () {
-        sectionIndex = Math.min(4, sectionIndex + 1);
-        showSection(sectionIndex);
-    });
-});

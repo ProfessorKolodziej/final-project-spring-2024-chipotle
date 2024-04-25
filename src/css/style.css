@@ -221,6 +221,10 @@ svg #tortilla {
 	display:block;
 }
 
+svg #big_lettuce {
+	display:block;
+}
+
 svg image {
 	display: none;
 }
@@ -229,3 +233,11 @@ svg image {
 	display:block;	
 }
 
+.item {
+	display: none;
+  }
+  
+  .show {
+	display: block;
+  }
+  

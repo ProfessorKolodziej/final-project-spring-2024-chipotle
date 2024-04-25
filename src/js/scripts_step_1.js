@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     imageLifestyle_bowl.addEventListener("click", function() {
-        window.location.href = "step_4.html";
+        window.location.href = "lifestyle_bowl.html";
     });
 });
 
