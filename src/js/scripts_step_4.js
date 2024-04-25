@@ -1,15 +1,35 @@
-console.log
+document.addEventListener("DOMContentLoaded", function() {
+    let imageSteak = document.querySelector("#choice_steak img");
+    let imageBeef = document.querySelector("#choice_beef img");
+    let imageVeggies = document.querySelector("#choice_veggies img");
+    let imageChicken = document.querySelector("#choice_chicken img");
+
+    imageSteak.addEventListener("click", function() {
+        showAndHide(container1);
+    });
+
+    imageBeef.addEventListener("click", function() {
+        showAndHide(container2);
+    });
+
+    imageVeggies.addEventListener("click", function() {
+        showAndHide(container3);
+    });
+
+    imageChicken.addEventListener("click", function() {
+        showAndHide(container4);
+    });
+});
+
 let isClicked1 = true;
 let isClicked2 = true;
 let isClicked3 = true;
 let isClicked4 = true;
 
-
-const container1 = document.querySelector('#steak');
-const container2 = document.querySelector('#beef');
-const container3 = document.querySelector('#veggies');
-const container4 = document.querySelector('#chicken');
-
+let container1 = document.querySelector('#steak');
+let container2 = document.querySelector('#beef');
+let container3 = document.querySelector('#veggies');
+let container4 = document.querySelector('#chicken');
 
 const showAndHide = function(container){
     if(container === container1){

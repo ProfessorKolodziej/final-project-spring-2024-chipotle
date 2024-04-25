@@ -1,9 +1,23 @@
-console.log
+/*start step 3 javascript*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    let imageBlackBeans = document.querySelector("#choice_black_beans img");
+    let imagePintoBeans = document.querySelector("#choice_pinto_beans img");
+
+    imageBlackBeans.addEventListener("click", function() {
+        showAndHide(container1);
+    });
+
+    imagePintoBeans.addEventListener("click", function() {
+        showAndHide(container2);
+    });
+});
+
 let isClicked1 = true;
 let isClicked2 = true;
 
-const container1 = document.querySelector('#black_beans');
-const container2 = document.querySelector('#brown_beans');
+let container1 = document.querySelector('#black_beans');
+let container2 = document.querySelector('#brown_beans');
 
 const showAndHide = function(container){
     if(container === container1){
@@ -24,3 +38,5 @@ const showAndHide = function(container){
         }
     }
 }
+
+/*end step 3 javascript*/
