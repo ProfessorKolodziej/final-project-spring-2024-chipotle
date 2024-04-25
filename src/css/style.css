@@ -219,21 +219,6 @@ svg #empty_bowl {
 	display:block;	
 }
 
-.white_rice {
-	display:block;
-}
-
-.brown_rice {
-	display:none;
-}
-
-.black_beans {
-	display:block;
-}
-
-.brown_beans {
-	display:none;
-}
 .steak {
 	display:block;
 }
@@ -246,4 +231,3 @@ svg #empty_bowl {
 .chicken {
 	display:none;
 }
-
