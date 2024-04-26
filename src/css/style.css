@@ -5,11 +5,18 @@
 }
 
 h1 {
-	color: var(--color-primary);
+	font: coiny;
+	color: #AC2318
 }
 h2 {
+	font: coming soon;
 	color: black;
 }
+
+.content-container {
+	font:coiny;
+}
+
 
 .start1 {
 	color: white;
@@ -122,6 +129,11 @@ h2 {
 	max-height: 100%;
 	width: 300px;
 }
+
+.bowl_image:hover, .burrito_image:hover, .lifestyle_bowl_image:hover, .white_rice_image:hover, .brown_rice_image:hover, .black_beans_image:hover, .pinto_beans_image:hover, .steak_image:hover, .beef_image:hover, .veggies_image:hover, .chicken_image:hover, .sour_cream_image:hover, .cheese_image:hover, .hot_salsa_image:hover, .corn_image:hover, .guac_image:hover, .queso_image:hover, .salsa_image:hover, .green_salsa_image:hover, .lettuce_image:hover {
+	box-shadow: 0 0 10px rgba(65, 4, 4, 0.5);
+}
+
 .burrito_image {
 	max-height: 100%;
 	width: 300px;
@@ -237,7 +249,45 @@ svg image {
 	display: none;
   }
   
-  .show {
+.show {
 	display: block;
   }
   
+
+#secion2, #section3, #section4 {
+	display: none;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url('your_image_path.jpg');
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: 100vh; /* Set the height of the body to the full viewport height */
+}
+
+/* Style for the start button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Focus effect for the button */
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

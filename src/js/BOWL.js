@@ -54,27 +54,49 @@ function deselectAll() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    let sectionIndex = 1; // Initialize section index
+    const totalSections = 4;
 
-    // Function to show current section and hide others
     function showSection(index) {
-        for (let i = 1; i <= 4; i++) {
-            document.getElementById('section' + i).style.display = i === index ? 'block' : 'none';
+        for (let i = 1; i <= totalSections; i++) {
+            const section = document.getElementById('section' + i);
+            if (section) {
+                section.style.display = i === index ? 'block' : 'none';
+            }
+        }
+        
+        const finishBtn = document.getElementById('finishBtn');
+        if (index === totalSections && finishBtn) {
+            finishBtn.style.display = 'block';
+        } else if (finishBtn) {
+            finishBtn.style.display = 'none';
+        }
+        
+        const nextBtn = document.getElementById('nextBtn');
+        if (nextBtn) {
+            nextBtn.innerText = index === totalSections ? 'Finish' : 'Next';
         }
     }
 
-    // Initial section display
+    let sectionIndex = 1;
     showSection(sectionIndex);
 
-    // Back button event listener
-    document.getElementById('backBtn').addEventListener('click', function () {
-        sectionIndex = Math.max(1, sectionIndex - 1);
-        showSection(sectionIndex);
-    });
+    const backBtn = document.getElementById('backBtn');
+    if (backBtn) {
+        backBtn.addEventListener('click', function () {
+            sectionIndex = Math.max(1, sectionIndex - 1);
+            showSection(sectionIndex);
+        });
+    }
 
-    // Next button event listener
-    document.getElementById('nextBtn').addEventListener('click', function () {
-        sectionIndex = Math.min(4, sectionIndex + 1);
-        showSection(sectionIndex);
-    });
+    const nextBtn = document.getElementById('nextBtn');
+    if (nextBtn) {
+        nextBtn.addEventListener('click', function () {
+            if (sectionIndex === totalSections) {
+                window.location.href = 'bye.html';
+            } else {
+                sectionIndex = Math.min(totalSections, sectionIndex + 1);
+                showSection(sectionIndex);
+            }
+        });
+    }
 });
