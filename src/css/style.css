@@ -14,9 +14,6 @@ h2 {
 	color: black;
 }
 
-
-
-
 .start1 {
 	color: white;
 	text-decoration: none;
@@ -127,9 +124,6 @@ h2 {
 	align-items: center;
 	padding: 20px;
 }
-
-
-
 
 .bowl-image {
 	max-height: 100%;
@@ -338,8 +332,6 @@ body {
 	height: 100%;
 	width: 100%;
 }
-
-
 
 .bowl-image:hover, .burrito-image:hover, .lifestyle-bowl-image:hover, .white-rice-image:hover, .brown-rice-image:hover, .black-beans-image:hover, .pinto-beans-image:hover, .steak-image:hover, .beef-image:hover, .veggies-image:hover, .chicken-image:hover, .sour-cream-image:hover, .cheese-image:hover, .hot-salsa-image:hover, .corn-image:hover, .guac-image:hover, .queso-image:hover, .salsa-image:hover, .green-salsa-image:hover, .lettuce-image:hover {
 	box-shadow: 0 0 10px rgb(65 4 4 / 50%);
