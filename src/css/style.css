@@ -13,7 +13,10 @@ h1 {
 h2 {	
 	color: black;
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .start1 {
 	color: white;
 	text-decoration: none;
@@ -99,6 +102,7 @@ h2 {
 
 }
 
+<<<<<<< Updated upstream
 .sub-food-grid ul{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -107,6 +111,9 @@ h2 {
 }
 
 .sub-food-grid li {
+=======
+.sub_food_grid li {
+>>>>>>> Stashed changes
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
@@ -119,6 +126,7 @@ h2 {
 	list-style: none; /* Remove default list styling */
 }
 
+<<<<<<< Updated upstream
 .sub-food-grid-two li {
 	justify-content: center;
 	align-items: center;
@@ -126,6 +134,9 @@ h2 {
 }
 
 .bowl-image {
+=======
+.bowl_image {
+>>>>>>> Stashed changes
 	max-height: 100%;
 	width: 300px;
 }
@@ -135,16 +146,25 @@ h2 {
 	width: 300px;
 }
 
+<<<<<<< Updated upstream
 .lifestyle-bowl-image {
+=======
+.burrito_image, .lifestyle_bowl_image {
+>>>>>>> Stashed changes
 	max-height: 100%;
 	width: 300px;
 }
 
+<<<<<<< Updated upstream
 .brown-rice-image {
+=======
+.brown_rice_image, .white_rice_image, .black_beans_image, .pinto_beans_image {
+>>>>>>> Stashed changes
 	max-height: 100%;
 	width: 200px;
 }
 
+<<<<<<< Updated upstream
 .white-rice-image {
 	max-height: 100%;
 	width: 200px;
@@ -161,10 +181,14 @@ h2 {
 }
 
 .steak-image {
+=======
+.steak_image, .beef_image, .veggies_image, .chicken_image {
+>>>>>>> Stashed changes
 	max-height: 100%;
 	width: 150px;
 }
 
+<<<<<<< Updated upstream
 .beef-image {
 	max-height: 100%;
 	width: 150px;
@@ -181,6 +205,9 @@ h2 {
 }	
 
 .lettuce-image {
+=======
+.lettuce_image, .sour_cream_image, .cheese_image, .hot_salsa_image, .corn_image, .guac_image, .queso_image, .salsa_image, .green_salsa_image  {
+>>>>>>> Stashed changes
 	max-height: 100%;
 	width: 100px;
 }
@@ -273,6 +300,7 @@ svg image {
 	display: none;
 }
 
+<<<<<<< Updated upstream
 body {
     margin: 10px; /* Remove default margin */
     padding: 0; /* Remove default padding */
@@ -283,6 +311,8 @@ body {
     height: 100%; /* Set the height of the body to the full viewport height */
 }
 
+=======
+>>>>>>> Stashed changes
 /* Style for the start button */
 .button {
     display: inline-block;
@@ -336,3 +366,57 @@ body {
 .bowl-image:hover, .burrito-image:hover, .lifestyle-bowl-image:hover, .white-rice-image:hover, .brown-rice-image:hover, .black-beans-image:hover, .pinto-beans-image:hover, .steak-image:hover, .beef-image:hover, .veggies-image:hover, .chicken-image:hover, .sour-cream-image:hover, .cheese-image:hover, .hot-salsa-image:hover, .corn-image:hover, .guac-image:hover, .queso-image:hover, .salsa-image:hover, .green-salsa-image:hover, .lettuce-image:hover {
 	box-shadow: 0 0 10px rgb(65 4 4 / 50%);
 }
+
+h1, h2 {
+    font-family: 'Coiny', 'Coming Soon',;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('pages/images/chipotle_store.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* This ensures the body takes up the full height of the viewport */
+}
+
+.content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Coiny';
+}
+
+.chipotle_store {
+    display: none; /* Hide the image as it's now used as background */
+	
+}
+
+.item4 ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 columns */
+	grid-template-rows: repeat(2, 1fr); /* 2 rows */
+	list-style: none; /* Remove default list styling */
+	}
+
+.item2 ul {
+	display: flex;
+	width: 100%;
+	list-style: none;
+	justify-content: space-evenly;
+}
+
+.item2 li {
+	max-width: 100%;
+	height: auto;
+	padding: 20px;
+	margin: 10px;
+}
+
