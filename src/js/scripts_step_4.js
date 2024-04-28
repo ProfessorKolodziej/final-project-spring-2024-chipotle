@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let imageSteak = document.querySelector("#choice_steak img");
-    let imageBeef = document.querySelector("#choice_beef img");
-    let imageVeggies = document.querySelector("#choice_veggies img");
-    let imageChicken = document.querySelector("#choice_chicken img");
+    let imageSteak = document.querySelector("#choice-steak img");
+    let imageBeef = document.querySelector("#choice-beef img");
+    let imageVeggies = document.querySelector("#choice-veggies img");
+    let imageChicken = document.querySelector("#choice-chicken img");
 
     imageSteak.addEventListener("click", function() {
         showAndHide(container1);
