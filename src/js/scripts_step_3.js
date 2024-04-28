@@ -1,8 +1,8 @@
 /*start step 3 javascript*/
 
 document.addEventListener("DOMContentLoaded", function() {
-    let imageBlackBeans = document.querySelector("#choice_black_beans img");
-    let imagePintoBeans = document.querySelector("#choice_pinto_beans img");
+    let imageBlackBeans = document.querySelector("#choice-black-beans img");
+    let imagePintoBeans = document.querySelector("#choice-pinto-beans img");
 
     imageBlackBeans.addEventListener("click", function() {
         showAndHide(container1);
@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
 let isClicked1 = true;
 let isClicked2 = true;
 
-let container1 = document.querySelector('#black_beans');
-let container2 = document.querySelector('#brown_beans');
+let container1 = document.querySelector('#black-beans');
+let container2 = document.querySelector('#brown-beans');
 
 const showAndHide = function(container){
     if(container === container1){
