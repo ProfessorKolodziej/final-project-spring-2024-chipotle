@@ -1,34 +1,22 @@
+document.addEventListener("DOMContentLoaded", function() {
+    let imageBowl = document.querySelector("#choice-bowl img");
+    let imageBurrito = document.querySelector("#choice-burrito img");
+    let imageLifestyle_bowl = document.querySelector("#choice-lifestyle-bowl img");
 
+    imageBowl.addEventListener("click", function() {
+        window.location.href = "bowl.html";
+    });
 
-const SELECTED_COLOR = "grey";
-const UNSELECTED_COLOR = "white";
+    imageBurrito.addEventListener("click", function() {
+        window.location.href = "burrito.html";
+    });
 
-document.getElementById("choice_bowl").addEventListener("click", function() {
-    if (document.getElementById("choice_bowl").style.background == SELECTED_COLOR) {
-        document.getElementById("choice_bowl").style.background=UNSELECTED_COLOR;
-    } else {
-        document.getElementById("choice_bowl").style.background=SELECTED_COLOR;
-    }
-    document.getElementById("choice_burrito").style.background=UNSELECTED_COLOR;
-    document.getElementById("choice_lifestyle_bowl").style.background=UNSELECTED_COLOR;
+    imageLifestyle_bowl.addEventListener("click", function() {
+        window.location.href = "lifestyle_bowl.html";
+    });
 });
 
-document.getElementById("choice_burrito").addEventListener("click", function() {
-    if (document.getElementById("choice_burrito").style.background == SELECTED_COLOR) {
-        document.getElementById("choice_burrito").style.background=UNSELECTED_COLOR;
-    } else {
-        document.getElementById("choice_burrito").style.background=SELECTED_COLOR;
-    }
-    document.getElementById("choice_bowl").style.background=UNSELECTED_COLOR;
-    document.getElementById("choice_lifestyle_bowl").style.background=UNSELECTED_COLOR;
-});
-
-document.getElementById("choice_lifestyle_bowl").addEventListener("click", function() {
-    if (document.getElementById("choice_lifestyle_bowl").style.background == SELECTED_COLOR) {
-        document.getElementById("choice_lifestyle_bowl").style.background=UNSELECTED_COLOR;
-    } else {
-        document.getElementById("choice_lifestyle_bowl").style.background=SELECTED_COLOR;
-    }
-    document.getElementById("choice_burrito").style.background=UNSELECTED_COLOR;
-    document.getElementById("choice_bowl").style.background=UNSELECTED_COLOR;
-});
+const container1 = document.querySelector('#bowl-image');
+const container2 = document.querySelector('#burrito-image');
+const container3 = document.querySelector('#lifestyle-bowl-image');
+np

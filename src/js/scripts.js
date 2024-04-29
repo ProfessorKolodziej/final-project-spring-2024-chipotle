@@ -128,7 +128,7 @@ addClickToggleBackground("choice_corn");
 addClickToggleBackground("choice_guac");
 addClickToggleBackground("choice_queso");
 addClickToggleBackground("choice_salsa");
-addClickToggleBackground("choice_green-salsa");
+addClickToggleBackground("choice_green_salsa");
 // This is where you should write all JavaScript
 // for your project. Remember a few things as you start!
 // - Use let or const for all variables

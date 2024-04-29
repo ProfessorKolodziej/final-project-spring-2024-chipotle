@@ -1,29 +1,25 @@
-/*
-CSS controls the styling of the page.
-You can write a color in directly, or use variables.
-Try changing the color from blue to red in the
-primary color variable below.
-*/
-
 :root {
 	--color-primary: #AC2318;
 	--color-secondary: #D9D9D9;
 
 	background-color: #D9D9D9;
+	font-family: Coiny;
 }
 
 h1 {
-	color: var(--color-primary);
+	color: #AC2318
 }
 
-h2 {
+h2 {	
 	color: black;
 }
+
+
+
 
 .start1 {
 	color: white;
 	text-decoration: none;
-	font-family: coiny;
 
 }
 
@@ -39,20 +35,21 @@ h2 {
 }
 
 .continue {
-	width: 100%;
+	width: 10%;
 	display: flex;
-	font-family: coiny;
 	text-decoration: none;
-	color: white;
-	font-size: 25px
-}
-
-.continue button {
+	font-size: 25px;
 	margin-left: auto; 
 	margin-right: 0;
 	background-color: #441500;
 	border-radius: 2em;
 	padding: 1% 4%;  
+	color: white;
+}
+
+.continue a {
+	color: white;
+	text-decoration: none;
 }
 
 .continue:hover {
@@ -62,13 +59,9 @@ h2 {
 .quit {
 	width: 100%;
 	display: flex;
-	font-family: coiny;
 	text-decoration: none;
 	color: white;
 	font-size: 25px;
-}
-
-.quit button {
 	background-color: #441500;
 	border-radius: 2em;
 	padding: 1% 4%; 
@@ -81,13 +74,9 @@ h2 {
 .play-again {
 	width: 100%;
 	display: flex;
-	font-family: coiny;
 	text-decoration: none;
 	color: white;
-	font-size: 25px
-}
-
-.play-again button {
+	font-size: 25px;
 	background-color: #441500;
 	border-radius: 2em;
 	padding: 1% 4%; 
@@ -96,7 +85,6 @@ h2 {
 .play-again:hover {
 	color:#AC2318
 }
-
 
 .food-grid ul {
 	display: flex;
@@ -108,6 +96,7 @@ h2 {
 .food-grid li {
 	max-width: 100%;
 	height: auto;
+	list-style: none;
 	padding: 20px;
 	margin: 10px;
 
@@ -139,12 +128,15 @@ h2 {
 	padding: 20px;
 }
 
-.bowl1-image {
+
+
+
+.bowl-image {
 	max-height: 100%;
 	width: 300px;
 }
 
-.burrito1-image {
+.burrito-image {
 	max-height: 100%;
 	width: 300px;
 }
@@ -237,4 +229,118 @@ h2 {
 .green-salsa-image {
 	max-height: 100%;
 	width: 100px;
+}
+
+.chipotle-store {
+	max-height: 100%;
+	width: 100%;
+}
+
+#all-bowl {
+	max-height: 100%;
+	width: 500px;
+}
+
+#all-burrito {
+	max-height: 100%;
+	width: 500px;
+}
+
+svg #empty-bowl {
+	display:block;
+}
+	
+svg #tortilla {
+	display:block;
+}
+
+svg #big-lettuce {
+	display:block;
+}
+
+svg image {
+	display: none;
+}
+
+.main-container {
+	display:block;	
+}
+
+.item {
+	display: none;
+  }
+  
+.show {
+	display: block;
+  }
+  
+
+#secion2, #section3, #section4 {
+	display: none;
+}
+
+body {
+    margin: 10px; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url('your-image-path.jpg');
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: 100%; /* Set the height of the body to the full viewport height */
+}
+
+/* Style for the start button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Focus effect for the button */
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+}
+
+.bottom-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+
+.bottom-container .next-button {
+	padding: 10px;
+	font-size: 16px;
+	margin: auto 25%;
+	position: relative;
+}
+
+.bottom-container .back-button {
+	padding: 10px;
+	font-size: 16px;
+	margin: 0 auto;
+
+}
+
+.welcome {
+	background-image: url('../pages/images/chipotle-store.png');
+	height: 100%;
+	width: 100%;
+}
+
+
+
+.bowl-image:hover, .burrito-image:hover, .lifestyle-bowl-image:hover, .white-rice-image:hover, .brown-rice-image:hover, .black-beans-image:hover, .pinto-beans-image:hover, .steak-image:hover, .beef-image:hover, .veggies-image:hover, .chicken-image:hover, .sour-cream-image:hover, .cheese-image:hover, .hot-salsa-image:hover, .corn-image:hover, .guac-image:hover, .queso-image:hover, .salsa-image:hover, .green-salsa-image:hover, .lettuce-image:hover {
+	box-shadow: 0 0 10px rgb(65 4 4 / 50%);
 }
