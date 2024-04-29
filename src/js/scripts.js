@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "pages/how_to_play.html";
     });
     // Append the button to the main element with class "content-container"
-    let contentContainer = document.querySelector(".content-container");
+    let contentContainer = document.querySelector(".content_container");
     contentContainer.appendChild(startButton);
 });

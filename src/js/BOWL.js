@@ -100,3 +100,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    let playAgainButton = document.getElementById("playAgainButton");
+    playAgainButton.addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+});

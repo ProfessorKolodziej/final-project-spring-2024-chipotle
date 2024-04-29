@@ -2,21 +2,103 @@
 	--color-primary: #AC2318;
 	--color-secondary: #D9D9D9;
 	background-color: #D9D9D9;
+
 }
 
-h1 {
-	font: coiny;
-	color: #AC2318
+/*index page 1*/
+
+.chipotle_store {
+	max-height: 100%;
+	width: 100px;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire width of the viewport */
+    height: 100%; /* Cover the entire height of the viewport */
+    object-fit: cover; /* Ensure the image covers the container */
+    z-index: 0; /* Ensure background image stays behind content */
+
 }
-h2 {
-	font: coming soon;
-	color: black;
+/* Base styles for common elements */
+.content_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Ensure the container is above the background image */
 }
 
-.content-container {
-	font:coiny;
+.content_container h1 {
+    font-family: 'Coiny';
+    font-size: 75px;
+	color: #AC2318;
+	margin: 0;
+	line-height: 1.2; /* Adjust the value as needed */
+	z-index: 2; /* Ensure the logo appears in front of the background image */
 }
 
+.content_container h2 {
+    font-family: 'Coiny';
+    font-size: 40px;
+	color: #441500;
+	margin: 0;
+	z-index: 2; /* Ensure the logo appears in front of the background image */
+	
+}
+
+.content_container .small_box {
+    width: 80%; /* Adjust width */
+    max-width: 800px; /* Set maximum width */
+    height: 80%; /* Adjust height */
+    max-height: 300px; /* Set maximum height */
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    position: absolute;
+    z-index: -1;
+}
+
+.content_cotainer img {
+    position: absolute; /* Position the logo absolutely */
+    top: -150px; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 2; /* Ensure the logo appears in front of the background image */
+}
+
+
+/* Style for the start button */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #441500; /* Primary color */
+    color: white;
+    font-size: 25px;
+	font-family: 'coiny';
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none; /* Remove default focus outline */
+	border-radius: 40px; /* Border radius */
+	z-index: 2; /* Ensure the logo appears in front of the background image */
+
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #941C15; /* Darken primary color on hover */
+}
+
+/* Focus effect for the button */
+button:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add shadow on focus */
+}
+
+
+
+
+/*end intro page 1*/
 
 .start1 {
 	color: white;
@@ -210,10 +292,6 @@ h2 {
 	max-height: 100%;
 	width: 100px;
 }
-.chipotle_store {
-	max-height: 100%;
-	width: 100px;
-}
 
 #all_bowl {
 	max-height: 100%;
@@ -291,3 +369,39 @@ body {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Adjust text color for better contrast */
+}
+
+
