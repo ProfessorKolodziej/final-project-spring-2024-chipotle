@@ -114,7 +114,7 @@ button {
 
 /* Media queries for different screen sizes */
 @media screen and (max-width: 1024px) {
-    /* Tablet styles */
+    /* Desktop styles */
     .content_container div {
         top: 25%; /* Adjust vertical position */
         width: 90%; /* Adjust width */
@@ -131,7 +131,7 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-    /* iPhone styles */
+    /* Ipad styles */
     .content_container div {
         top: 30%; /* Adjust vertical position */
         width: 90%; /* Adjust width */
@@ -149,8 +149,133 @@ button {
     }
 }
 
+/* Iphone */
+@media only screen and (max-width: 375px) {
+	.content_container {
+		position: absolute;
+		font-family: 'coiny', 'coming soon';
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: white; /* Adjust text color for better contrast */
+		width: 90%; /* Adjust width to fit within iPhone SE dimensions */
+		max-width: 375px; /* Max width for iPhone SE */
+		height: auto; /* Adjust height as needed */
+		padding: 20px; /* Add padding for better spacing */
+	}
+	.content_container ul li {
+		position: relative; /* Change to relative positioning */
+		font-family: 'Coming soon';
+		color:#000000;
+		font-size: 14px !important;
+		z-index: 2;
+		text-align: left;
+	}
+	.content_container div {
+		width: 90%; /* Adjust width as needed */
+		height: 400px; /* Adjust height as needed */
+		background-color: #D9D9D9;
+		margin: 0 auto; /* Center horizontally */
+		margin-top: 50px; /* Adjust margin-top to center vertically */
+		border-radius: 50px; /* Adjust border radius */
+		z-index: 1;
+		}
+	.content_container h2 {
+		font-size: 15px;
+		line-height: 1; /* Adjust line spacing */
+		margin-top: -20px;
+	}
+	.content_container h3 {
+		position: absolute; /* Change to relative positioning */
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 120%);
+		font-family: 'coiny';
+		color:#AC2318;
+		font-size: 25px !important;
+		z-index: 2;
+		text-decoration: underline; /* Underline the text */
+	}
+	
+	.step_1 h1 {
+		position: absolute; /* Change to relative positioning */
+		font-family: 'coiny';
+		color: #AC2318;
+		font-size: 20px !important;
+		z-index: 2;
+		margin-left: 50px; 
+	}
+	.step_2 {
+		position: absolute; /* Change to relative positioning */
+		font-family: 'coiny';
+		color: #AC2318;
+		font-size: 20px !important;
+		z-index: 2;
+		margin-left: 50px; 
+	}
+	.food_grid1 {
+		max-width: 375px;
+		position: relative;
+		top: 50%;
+		left: 25%; /* Adjust the left value to shift the SVG to the left */
+		transform: translate(-20%,0%);
+	}
+	.food_grid1 ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style: none; /* Remove bullet points */
+	}
+	.food_grid1 li {
+		margin-bottom: 20px; /* Add margin bottom for spacing between images */
+	}
+	
+	.food_grid1 li img {
+		max-width: 60%; /* Adjust the maximum width as needed */
+		height: auto; /* Maintain aspect ratio */
+	}
+	.food_grid {
+		max-width: 375px;
+		position: relative;
+		top: 50%;
+		left: 25%; /* Adjust the left value to shift the SVG to the left */
+		transform: translate(-70%, -20%);
+	}
+	.food_grid {
+		display: flex;
+		justify-content: center; /* Horizontally center the images */
+		align-items: center; /* Vertically center the images */
+	}
+	
+	.food_grid ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0; /* Remove the space between images */
+		list-style: none; /* Remove bullet points */
+	}
+	.content_container.next_buttons {
+		position: relative;
+		margin-top: 20px; /* Adjust the value as needed */
+		transform: translate(0%,20%); /* Center vertically */
+	}
+	.content-container {
+		display: relative;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+	}
+	
+	#all_bowl {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-45%, -80%);
+	}
+	
+	
 
-
+}
 
 /*end intro page 1*/
 
@@ -167,7 +292,7 @@ button {
 
 .content_container ul li {
 	position: relative; /* Change to relative positioning */
-	font-family: 'Coming soon' !important;
+	font-family: 'Coming soon';
 	color:#000000;
     font-size: 28px; 
     z-index: 2;
@@ -199,8 +324,8 @@ button {
 
 .next_buttons {
     position: absolute;
-    top: 80%; /* Adjust vertically as needed */
-    right: 20px; /* Align to the right side */
+    top: 75%; /* Adjust vertically as needed */
+    right: 40px; /* Align to the right side */
     transform: translateY(-50%); /* Center vertically */
 }
 .food_grid ul {
@@ -469,27 +594,6 @@ h2 {
 	color: #AC2318;
 }
 
-.continue {
-	width: 10%;
-	display: flex;
-	text-decoration: none;
-	font-size: 25px;
-	margin-left: auto; 
-	margin-right: 0;
-	background-color: #441500;
-	border-radius: 2em;
-	padding: 1% 4%;  
-	color: white;
-}
-
-.continue a {
-	color: white;
-	text-decoration: none;
-}
-
-.continue:hover {
-	color:#AC2318
-}
 
 .quit {
 	width: 100%;
