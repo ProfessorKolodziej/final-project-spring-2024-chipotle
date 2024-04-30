@@ -143,35 +143,15 @@ const showAndHide = function(container) {
             container.style.display = 'none';
             isClicked9 = true;
         }
-    }
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    let deselectButton = document.getElementById("deselectButton");
-
-    deselectButton.addEventListener("click", function() {
-        deselectAll();
     });
-});
-
-function deselectAll() {
-    container1.style.display = 'none';
-    container2.style.display = 'none';
-    container3.style.display = 'none';
-    container4.style.display = 'none';
-    container5.style.display = 'none';
-    container6.style.display = 'none';
-    container7.style.display = 'none';
-    container8.style.display = 'none';
-    container9.style.display = 'none';
-
-    isClicked1 = true;
-    isClicked2 = true;
-    isClicked3 = true;
-    isClicked4 = true;
-    isClicked5 = true;
-    isClicked6 = true;
-    isClicked7 = true;
-    isClicked8 = true;
-    isClicked9 = true;
 }
+
+addClickToggleBackground("choice_lettuce");
+addClickToggleBackground("choice_sour_cream");
+addClickToggleBackground("choice_cheese");
+addClickToggleBackground("choice_veggies");
+addClickToggleBackground("choice_corn");
+addClickToggleBackground("choice_guac");
+addClickToggleBackground("choice_queso");
+addClickToggleBackground("choice_salsa");
+addClickToggleBackground("choice_green_salsa");
