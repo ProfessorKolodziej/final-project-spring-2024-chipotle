@@ -112,39 +112,8 @@ button {
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add shadow on focus */
 	}
 
-/* Media queries for different screen sizes */
-@media screen and (max-width: 1024px) {
-    /* Desktop styles */
-    .content_container div {
-        top: 25%; /* Adjust vertical position */
-        width: 90%; /* Adjust width */
-    }
-    
-    .content_container h1,
-    .content_container h2 {
-        font-size: 28px; /* Adjust font size for tablets */
-    }
-
-    button {
-        font-size: 18px; /* Adjust font size for tablets */
-    }
-}
-
 /* Ipad styles */
 @media only screen and (max-width: 768px) {
-	.content_container div {
-		width: 90%; /* Adjust width as needed */
-		height: 900px; /* Adjust height as needed */
-		background-color: #D9D9D9;
-		margin: 0 auto; /* Center horizontally */
-		margin-top: 50px; /* Adjust margin-top to center vertically */
-		border-radius: 50px; /* Adjust border radius */
-		z-index: 1;
-		}
-}
-
-/* Iphone */
-@media only screen and (max-width: 375px) {
 	.content_container {
 		position: absolute;
 		font-family: 'coiny', 'coming soon';
@@ -153,7 +122,141 @@ button {
 		transform: translate(-50%, -50%);
 		text-align: center;
 		color: white; /* Adjust text color for better contrast */
-		width: 90%; /* Adjust width to fit within iPhone SE dimensions */
+		width: 90%; /* Adjust width to fit within iPad dimensions */
+		max-width: 768px; /* Max width for iPad */
+		height: auto; /* Adjust height as needed */
+		padding: 20px; /* Add padding for better spacing */
+	}
+	
+	.content_container ul li {
+		position: relative; /* Change to relative positioning */
+		font-family: 'Coming soon';
+		color: #000000;
+		font-size: 14px !important;
+		z-index: 2;
+		text-align: left;
+	}
+	
+	.content_container div {
+		position: relative;
+		width: 90%; /* Adjust width as needed */
+		max-width: 768px; /* Max width for iPad */
+		height: 900px; /* Adjust height as needed */
+		background-color: #D9D9D9;
+		margin: 0 auto; /* Center horizontally */
+		margin-top: 50px; /* Adjust margin-top to center vertically */
+		border-radius: 50px; /* Adjust border radius */
+		z-index: 1;
+	}
+	
+	.content_container h2 {
+		font-size: 15px;
+		line-height: 1; /* Adjust line spacing */
+		margin-top: -20px;
+	}
+	
+	.content_container h3 {
+		position: absolute; /* Change to relative positioning */
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 120%);
+		font-family: 'coiny';
+		color: #AC2318;
+		font-size: 25px !important;
+		z-index: 2;
+		text-decoration: underline; /* Underline the text */
+	}
+	
+	.step_1 h1 {
+		position: absolute; /* Change to relative positioning */
+		font-family: 'coiny';
+		color: #AC2318;
+		font-size: 2px;
+		z-index: 2;
+		margin-left: 50px; 
+	}
+	
+	.step_2 {
+		position: absolute; /* Change to relative positioning */
+		font-family: 'coiny';
+		color: #AC2318;
+		font-size: 20px !important;
+		z-index: 2;
+		margin-left: 50px; 
+	}
+	
+	.food_grid1 {
+		max-width: 768px; /* Max width for iPad */
+		position: relative;
+		top: 50%;
+		left: 50%; /* Adjust the left value to center horizontally */
+		transform: translate(-50%, -20%);
+	}
+	
+	.food_grid1 ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		list-style: none; /* Remove bullet points */
+	}
+	
+	.food_grid1 li {
+		margin-bottom: 20px; /* Add margin bottom for spacing between images */
+	}
+	
+	.food_grid1 li img {
+		max-width: 60%; /* Adjust the maximum width as needed */
+		height: auto; /* Maintain aspect ratio */
+	}
+	
+	.food_grid {
+		max-width: 768px; /* Max width for iPad */
+		position: relative;
+		top: 50%;
+		left: 50%; /* Adjust the left value to center horizontally */
+		transform: translate(-50%, -20%);
+		display: flex;
+		justify-content: center; /* Horizontally center the images */
+		align-items: center; /* Vertically center the images */
+	}
+	
+	.food_grid ul {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0; /* Remove the space between images */
+		list-style: none; /* Remove bullet points */
+	}
+	
+	.content_container.next_buttons {
+		position: relative;
+		margin-top: 20px; /* Adjust the value as needed */
+		transform: translate(0%, 20%); /* Center vertically */
+	}
+	
+	.content-container {
+		display: relative;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+	}
+	
+	#all_bowl {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-45%, -80%);
+	}
+}
+
+/* Iphone */
+@media screen and (max-width: 375px) {
+	.content_container {
+		position: relative;
+		font-family: 'coiny', 'coming soon';
+		transform: translate(-50%, -50%);
+		text-align: center;
+		color: white; /* Adjust text color for better contrast */
+		width: 80%; /* Adjust width to fit within iPhone SE dimensions */
 		max-width: 375px; /* Max width for iPhone SE */
 		height: auto; /* Adjust height as needed */
 		padding: 20px; /* Add padding for better spacing */
