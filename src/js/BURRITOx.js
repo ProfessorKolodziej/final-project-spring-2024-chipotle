@@ -1,28 +1,28 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Rice selection
-    setupSelection("#choice_white_rice img", "#white_rice");
-    setupSelection("#choice_brown_rice img", "#brown_rice");
+    setupSelection("#choice-white-rice img", "#white-rice");
+    setupSelection("#choice-brown-rice img", "#brown-rice");
 
     // Beans selection
-    setupSelection("#choice_black_beans img", "#black_beans");
-    setupSelection("#choice_pinto_beans img", "#pinto_beans");
+    setupSelection("#choice-black-beans img", "#black-beans");
+    setupSelection("#choice-pinto-beans img", "#pinto-beans");
 
     // Protein selection
-    setupSelection("#choice_steak img", "#steak");
-    setupSelection("#choice_beef img", "#beef");
-    setupSelection("#choice_veggies img", "#veggies");
-    setupSelection("#choice_chicken img", "#chicken");
+    setupSelection("#choice-steak img", "#steak");
+    setupSelection("#choice-beef img", "#beef");
+    setupSelection("#choice-veggies img", "#veggies");
+    setupSelection("#choice-chicken img", "#chicken");
 
     // Toppings selection
-    setupSelection("#choice_lettuce img", "#lettuce");
-    setupSelection("#choice_sour_cream img", "#sour_cream");
-    setupSelection("#choice_cheese img", "#cheese");
-    setupSelection("#choice_hot_salsa img", "#hot_salsa");
-    setupSelection("#choice_corn img", "#corn");
-    setupSelection("#choice_guac img", "#guac");
-    setupSelection("#choice_queso img", "#queso");
-    setupSelection("#choice_salsa img", "#mild_salsa");
-    setupSelection("#choice_green_salsa img", "#green_salsa");
+    setupSelection("#choice-lettuce img", "#lettuce");
+    setupSelection("#choice-sour-cream img", "#sour-cream");
+    setupSelection("#choice-cheese img", "#cheese");
+    setupSelection("#choice-hot-salsa img", "#hot-salsa");
+    setupSelection("#choice-corn img", "#corn");
+    setupSelection("#choice-guac img", "#guac");
+    setupSelection("#choice-queso img", "#queso");
+    setupSelection("#choice-salsa img", "#mild-salsa");
+    setupSelection("#choice-green-salsa img", "#green-salsa");
 
     let deselectButton = document.getElementById("deselectButton");
     deselectButton.addEventListener("click", function() {
@@ -52,8 +52,6 @@ function deselectAll() {
         container.style.display = 'none';
     });
 }
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const totalSections = 4;
@@ -94,20 +92,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if (nextBtn) {
         nextBtn.addEventListener('click', function () {
             if (sectionIndex === totalSections) {
-                window.location.href = 'bye.html';
+                window.location.href = 'byex.html';
             } else {
                 sectionIndex = Math.min(totalSections, sectionIndex + 1);
                 showSection(sectionIndex);
             }
         });
     }
-   
-    document.addEventListener("DOMContentLoaded", function() {
-        let playAgainBtn = document.getElementById('playAgainBtn');
-        if (playAgainBtn) {
-            playAgainBtn.addEventListener('click', function() {
-                window.location.href = 'step_1.html';
-            });
-        }
-    });
 });

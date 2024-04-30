@@ -2,6 +2,12 @@
 	--color-primary: #AC2318;
 	--color-secondary: #D9D9D9;
 	background-color: #D9D9D9;
+	font-family: "coiny", "coming soon"
+}
+:root {
+	--color-primary: #AC2318;
+	--color-secondary: #D9D9D9;
+	background-color: #D9D9D9;
 
 }
 
@@ -435,3 +441,341 @@ body, html {
 }
 
 
+
+h1 {
+	color: #AC2318
+}
+
+h2 {	
+	color: black;
+}
+
+
+
+.start1 {
+	color: white;
+	text-decoration: none;
+
+}
+
+.start button {
+	background-color: #441500;
+	padding: 1% 4%;  
+	border-radius: 2em;
+	font-size: 40px
+}
+
+.start1:hover {
+	color: #AC2318;
+}
+
+.continue {
+	width: 10%;
+	display: flex;
+	text-decoration: none;
+	font-size: 25px;
+	margin-left: auto; 
+	margin-right: 0;
+	background-color: #441500;
+	border-radius: 2em;
+	padding: 1% 4%;  
+	color: white;
+}
+
+.continue a {
+	color: white;
+	text-decoration: none;
+}
+
+.continue:hover {
+	color:#AC2318
+}
+
+.quit {
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	background-color: #441500;
+	border-radius: 2em;
+	padding: 1% 4%; 
+}
+
+.quit:hover {
+	color:#AC2318
+}
+
+.play-again {
+	width: 100%;
+	display: flex;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+	background-color: #441500;
+	border-radius: 2em;
+	padding: 1% 4%; 
+}
+
+.play-again:hover {
+	color:#AC2318
+}
+
+.food-grid ul {
+	display: flex;
+	width: 100%;
+	list-style: none;
+	justify-content: space-evenly;
+}
+
+.food-grid li {
+	max-width: 100%;
+	height: auto;
+	list-style: none;
+	padding: 20px;
+	margin: 10px;
+
+}
+
+.sub-food-grid ul{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 columns */
+	grid-template-rows: repeat(2, 1fr); /* 2 rows */
+	list-style: none; /* Remove default list styling */
+}
+
+.sub-food-grid li {
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.sub-food-grid-two ul{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 3 columns */
+	grid-template-rows: repeat(2, 1fr); /* 2 rows */
+	list-style: none; /* Remove default list styling */
+}
+
+.sub-food-grid-two li {
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+
+
+
+.bowl-image {
+	max-height: 100%;
+	width: 300px;
+}
+
+.burrito-image {
+	max-height: 100%;
+	width: 300px;
+}
+
+.lifestyle-bowl-image {
+	max-height: 100%;
+	width: 300px;
+}
+
+.brown-rice-image {
+	max-height: 100%;
+	width: 200px;
+}
+
+.white-rice-image {
+	max-height: 100%;
+	width: 200px;
+}
+
+.black-beans-image {
+	max-height: 100%;
+	width: 200px;
+}
+
+.pinto-beans-image {
+	max-height: 100%;
+	width: 200px;
+}
+
+.steak-image {
+	max-height: 100%;
+	width: 150px;
+}
+
+.beef-image {
+	max-height: 100%;
+	width: 150px;
+}
+
+.veggies-image {
+	max-height: 100%;
+	width: 150px;
+}
+
+.chicken-image {
+	max-height: 100%;
+	width: 150px;
+}	
+
+.lettuce-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.sour-cream-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.cheese-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.hot-salsa-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.corn-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.guac-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.queso-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.salsa-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.green-salsa-image {
+	max-height: 100%;
+	width: 100px;
+}
+
+.chipotle-store {
+	max-height: 100%;
+	width: 100%;
+}
+
+#all-bowl {
+	max-height: 100%;
+	width: 500px;
+}
+
+#all-burrito {
+	max-height: 100%;
+	width: 500px;
+}
+
+svg #empty-bowl {
+	display:block;
+}
+	
+svg #tortilla {
+	display:block;
+}
+
+svg #big-lettuce {
+	display:block;
+}
+
+svg image {
+	display: none;
+}
+
+.main-container {
+	display:block;	
+}
+
+.item {
+	display: none;
+  }
+  
+.show {
+	display: block;
+  }
+  
+
+#secion2, #section3, #section4 {
+	display: none;
+}
+
+body {
+    margin: 10px; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url('your-image-path.jpg');
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    height: 100%; /* Set the height of the body to the full viewport height */
+}
+
+/* Style for the start button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Focus effect for the button */
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+}
+
+.bottom-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+
+.bottom-container .next-button {
+	padding: 10px;
+	font-size: 16px;
+	margin: auto 25%;
+	position: relative;
+}
+
+.bottom-container .back-button {
+	padding: 10px;
+	font-size: 16px;
+	margin: 0 auto;
+
+}
+
+.welcome {
+	background-image: url('../pages/images/chipotle-store.png');
+	height: 100%;
+	width: 100%;
+}
+
+
+
+.bowl-image:hover, .burrito-image:hover, .lifestyle-bowl-image:hover, .white-rice-image:hover, .brown-rice-image:hover, .black-beans-image:hover, .pinto-beans-image:hover, .steak-image:hover, .beef-image:hover, .veggies-image:hover, .chicken-image:hover, .sour-cream-image:hover, .cheese-image:hover, .hot-salsa-image:hover, .corn-image:hover, .guac-image:hover, .queso-image:hover, .salsa-image:hover, .green-salsa-image:hover, .lettuce-image:hover {
+	box-shadow: 0 0 10px rgb(65 4 4 / 50%);
+}

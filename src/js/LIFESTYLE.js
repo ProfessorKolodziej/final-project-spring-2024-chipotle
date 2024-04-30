@@ -52,7 +52,6 @@ function deselectAll() {
         container.style.display = 'none';
     });
 }
-<<<<<<< HEAD
 
 
 
@@ -103,5 +102,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-=======
->>>>>>> parent of 9989650 (jj)
