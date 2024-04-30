@@ -237,7 +237,7 @@ button {
 		display: relative;
 		justify-content: center;
 		align-items: center;
-		min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+		min-height: 100vh; 
 	}
 	
 	#all_bowl {
@@ -255,14 +255,14 @@ button {
 		font-family: 'coiny', 'coming soon';
 		transform: translate(-50%, -50%);
 		text-align: center;
-		color: white; /* Adjust text color for better contrast */
-		width: 80%; /* Adjust width to fit within iPhone SE dimensions */
-		max-width: 375px; /* Max width for iPhone SE */
-		height: auto; /* Adjust height as needed */
-		padding: 20px; /* Add padding for better spacing */
+		color: white; 
+		width: 80%; 
+		max-width: 375px; 
+		height: auto; 
+		padding: 20px; 
 	}
 	.content_container ul li {
-		position: relative; /* Change to relative positioning */
+		position: relative; 
 		font-family: 'Coming soon';
 		color:#000000;
 		font-size: 14px !important;
@@ -270,21 +270,21 @@ button {
 		text-align: left;
 	}
 	.content_container div {
-		width: 90%; /* Adjust width as needed */
-		height: 400px; /* Adjust height as needed */
+		width: 90%; 
+		height: 400px; 
 		background-color: #D9D9D9;
-		margin: 0 auto; /* Center horizontally */
-		margin-top: 50px; /* Adjust margin-top to center vertically */
-		border-radius: 50px; /* Adjust border radius */
+		margin: 0 auto; 
+		margin-top: 50px; 
+		border-radius: 50px; 
 		z-index: 1;
 		}
 	.content_container h2 {
 		font-size: 15px;
-		line-height: 1; /* Adjust line spacing */
+		line-height: 1; 
 		margin-top: -20px;
 	}
 	.content_container h3 {
-		position: absolute; /* Change to relative positioning */
+		position: absolute;
 		top: 0;
 		left: 50%;
 		transform: translate(-50%, 120%);
@@ -292,11 +292,11 @@ button {
 		color:#AC2318;
 		font-size: 25px !important;
 		z-index: 2;
-		text-decoration: underline; /* Underline the text */
+		text-decoration: underline; 
 	}
 	
 	.step_1 h1 {
-		position: absolute; /* Change to relative positioning */
+		position: absolute; 
 		font-family: 'coiny';
 		color: #AC2318;
 		font-size: 20px !important;
@@ -304,7 +304,7 @@ button {
 		margin-left: 50px; 
 	}
 	.step_2 {
-		position: absolute; /* Change to relative positioning */
+		position: absolute;
 		font-family: 'coiny';
 		color: #AC2318;
 		font-size: 20px !important;
@@ -315,14 +315,14 @@ button {
 		max-width: 375px;
 		position: relative;
 		top: 50%;
-		left: 25%; /* Adjust the left value to shift the SVG to the left */
+		left: 25%; 
 		transform: translate(-20%,0%);
 	}
 	.food_grid1 ul {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		list-style: none; /* Remove bullet points */
+		list-style: none; 
 	}
 	.food_grid1 li {
 		margin-bottom: 20px; /* Add margin bottom for spacing between images */
@@ -458,6 +458,14 @@ button {
 
 }
 
+.food_grid {
+    grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, auto);
+}
+
+.item4
+
+
 .sub_food_grid ul{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr); /* 3 columns */
@@ -570,8 +578,9 @@ button {
 }
 
 #all_bowl {
-	max-height: 100%;
-	width: 500px;
+	width: 600px;
+  	position: fixed;
+  	top: -20px; /* Adjust the value as needed */
 }
 
 #all_burrito {
@@ -935,13 +944,13 @@ svg image {
 }
 
 body {
-    margin: 10px; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 10px; 
+    padding: 0; 
     background-image: url('your-image-path.jpg');
-    background-size: cover; /* Cover the entire screen */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    height: 100%; /* Set the height of the body to the full viewport height */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100%; 
 }
 
 /* Style for the start button */
