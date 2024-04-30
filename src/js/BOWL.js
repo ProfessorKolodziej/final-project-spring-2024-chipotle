@@ -110,4 +110,85 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     });
+    
+    const itemTexts = document.querySelectorAll('.item-text');
+    const foodGridItems = document.querySelectorAll('.food_grid ul li');
+
+    // Function to toggle text visibility based on index
+    function toggleTextVisibility(index) {
+        itemTexts.forEach((text, i) => {
+            if (i === index) {
+                text.style.display = 'block'; // Show text
+            } else {
+                text.style.display = 'none'; // Hide text
+            }
+        });
+    }
+
+    // Add event listeners to food grid items
+    foodGridItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+            toggleTextVisibility(index); // Toggle text visibility on click
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const itemTexts = document.querySelectorAll('.item-text');
+        const foodGridItems = document.querySelectorAll('.food_grid ul li');
+
+        // Function to toggle text visibility based on index
+        function toggleTextVisibility(index) {
+            itemTexts.forEach((text, i) => {
+                if (i === index) {
+                    text.style.display = 'block'; // Show text
+                } else {
+                    text.style.display = 'none'; // Hide text
+                }
+            });
+        }
+
+        // Add event listeners to food grid items
+        foodGridItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                toggleTextVisibility(index); // Toggle text visibility on click
+            });
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const itemTexts = document.querySelectorAll('.item-text');
+        const foodGridItems = document.querySelectorAll('.food_grid ul li');
+        const backBtn = document.getElementById('backBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        // Function to toggle text visibility based on index
+        function toggleTextVisibility(index) {
+            itemTexts.forEach((text, i) => {
+                if (i === index) {
+                    text.style.display = 'block'; // Show text
+                } else {
+                    text.style.display = 'none'; // Hide text
+                }
+            });
+        }
+
+        // Add event listeners to food grid items
+        foodGridItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentIndex = index;
+                toggleTextVisibility(index); // Toggle text visibility on click
+            });
+        });
+
+        // Event listener for the "Next" button
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % itemTexts.length;
+            toggleTextVisibility(currentIndex);
+        });
+
+        // Event listener for the "Back" button
+        backBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + itemTexts.length) % itemTexts.length;
+            toggleTextVisibility(currentIndex);
+        });
+    });
 });
