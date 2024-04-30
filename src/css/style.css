@@ -5,9 +5,12 @@
 
 }
 
+body {
+	max-width: 1280px; /* Set maximum width */
+    max-height: 832px; /* Set maximum height */
+}
 /*index page 1*/
-
-.chipotle_store {
+.background_image {
 	max-height: 100%;
 	width: 100px;
 	position: fixed;
@@ -19,80 +22,125 @@
     z-index: 0; /* Ensure background image stays behind content */
 
 }
-/* Base styles for common elements */
-.content_container {
+.background_image1 {
+	max-height: 100%;
+	width: 100px;
+	position: fixed;
+	opacity: 0.75; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Cover the entire width of the viewport */
+    height: 100%; /* Cover the entire height of the viewport */
+    object-fit: cover; /* Ensure the image covers the container */
+    z-index: -1; /* Ensure background image stays behind content */
+
+}
+
+.content_container div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1; /* Ensure the container is above the background image */
+    width: 814px; /* Adjust width */
+    height: 584px; /* Adjust height */
+    background-color: #D9D9D9;
+    border-radius: 50px; /* Adjust border radius */
+	z-index: 1;
+
+}
+
+.content_container img {
+	position: relative;
+    max-width: 90%; /* Set maximum width */
+    max-height: 30%; /* Set maximum height */
+    z-index: 2; /* Ensure the image appears in front of other content */
 }
 
 .content_container h1 {
-    font-family: 'Coiny';
-    font-size: 75px;
+	position: relative; /* Change to relative positioning */
+	font-family: 'coiny';
 	color: #AC2318;
-	margin: 0;
-	line-height: 1.2; /* Adjust the value as needed */
-	z-index: 2; /* Ensure the logo appears in front of the background image */
+    font-size: 75px; /* Adjust font size for larger screens */
+    line-height: 1.2; /* Adjust line height */
+    z-index: 2;
+	margin: 20px 0 40px; /* Adjust top and bottom margin */
+
 }
 
 .content_container h2 {
-    font-family: 'Coiny';
-    font-size: 40px;
-	color: #441500;
-	margin: 0;
-	z-index: 2; /* Ensure the logo appears in front of the background image */
-	
-}
-
-.content_container .small_box {
-    width: 80%; /* Adjust width */
-    max-width: 800px; /* Set maximum width */
-    height: 80%; /* Adjust height */
-    max-height: 300px; /* Set maximum height */
-    background-color: #D9D9D9;
-    border-radius: 20px;
-    position: absolute;
-    z-index: -1;
-}
-
-.content_cotainer img {
-    position: absolute; /* Position the logo absolutely */
-    top: -150px; /* Adjust the top position as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    z-index: 2; /* Ensure the logo appears in front of the background image */
-}
-
-
-/* Style for the start button */
-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #441500; /* Primary color */
-    color: white;
-    font-size: 25px;
+    position: relative; /* Change to relative positioning */
 	font-family: 'coiny';
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    outline: none; /* Remove default focus outline */
+	color:#441500;
+    font-size: 40px; /* Adjust font size for larger screens */
+    line-height: 0; /* Adjust line height */
+    z-index: 2;
+}
+
+
+button {
+    position: relative; /* Change to relative positioning */
+    font-size: 20px; /* Adjust font size for larger screens */
+    z-index: 2;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #441500; /* Primary color */
+	color: white;
+	font-size: 25px;
+	font-family: 'coiny';
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	outline: none; /* Remove default focus outline */
 	border-radius: 40px; /* Border radius */
 	z-index: 2; /* Ensure the logo appears in front of the background image */
+	}
+	
+	/* Hover effect for the button */
+	button:hover {
+		background-color: #941C15; /* Darken primary color on hover */
+	}
+	
+	/* Focus effect for the button */
+	button:focus {
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add shadow on focus */
+	}
 
+/* Media queries for different screen sizes */
+@media screen and (max-width: 1024px) {
+    /* Tablet styles */
+    .content_container div {
+        top: 25%; /* Adjust vertical position */
+        width: 90%; /* Adjust width */
+    }
+    
+    .content_container h1,
+    .content_container h2 {
+        font-size: 28px; /* Adjust font size for tablets */
+    }
+
+    button {
+        font-size: 18px; /* Adjust font size for tablets */
+    }
 }
 
-/* Hover effect for the button */
-button:hover {
-    background-color: #941C15; /* Darken primary color on hover */
-}
+@media screen and (max-width: 768px) {
+    /* iPhone styles */
+    .content_container div {
+        top: 30%; /* Adjust vertical position */
+        width: 90%; /* Adjust width */
+        max-width: 400px; /* Set maximum width for smaller screens */
+        height: 70%; /* Adjust height */
+    }
+    
+    .content_container h1,
+    .content_container h2 {
+        font-size: 24px; /* Adjust font size for iPhones */
+    }
 
-/* Focus effect for the button */
-button:focus {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add shadow on focus */
+    button {
+        font-size: 16px; /* Adjust font size for iPhones */
+    }
 }
 
 
@@ -100,74 +148,55 @@ button:focus {
 
 /*end intro page 1*/
 
-.start1 {
-	color: white;
-	text-decoration: none;
-	font-family: coiny;
+.content_container h3 {
+	position: relative; /* Change to relative positioning */
+	font-family: 'coiny';
+	top: -120px; /* Move the text up by 20 pixels */
+	color:#AC2318;
+    font-size: 70px; /* Adjust font size for larger screens */
+    z-index: 2;
+	text-decoration: underline; /* Underline the text */
+	margin-bottom: -20%;
+}
+
+.content_container ul li {
+	position: relative; /* Change to relative positioning */
+	font-family: 'Coming soon' !important;
+	color:#000000;
+    font-size: 28px; 
+    z-index: 2;
+	text-align: left;
 
 }
-.start button {
-	background-color: #441500;
-	padding: 1% 4%;  
-	border-radius: 2em;
-	font-size: 40px
-}
-.start1:hover {
+
+
+/* page 2 */
+
+
+.step_1 h1 {
+	position: relative; /* Change to relative positioning */
+	font-family: 'coiny';
 	color: #AC2318;
-}
-.continue {
-	width: 100%;
-	display: flex;
-	font-family: coiny;
-	text-decoration: none;
-	color: white;
-	font-size: 25px
-}
-.continue button {
-	margin-left: auto; 
-	margin-right: 0;
-	padding: 10px;
-	background-color: #441500;
-	border-radius: 2em;
-	padding: 1% 4%;  
-}
-.continue:hover {
-	color:#AC2318
+    font-size: 60px; /* Adjust font size for larger screens */
+    z-index: 2;
+	margin-left: 50px; 
 }
 
-.quit {
-	width: 100%;
-	display: flex;
-	font-family: coiny;
-	text-decoration: none;
-	color: white;
-	font-size: 25px;
-}
-.quit button {
-	background-color: #441500;
-	border-radius: 2em;
-	padding: 1% 4%; 
-}
-.quit:hover {
-	color:#AC2318
-}
-.play_again {
-	width: 100%;
-	display: flex;
-	font-family: coiny;
-	text-decoration: none;
-	color: white;
-	font-size: 25px
-}
-.play_again button {
-	background-color: #441500;
-	border-radius: 2em;
-	padding: 1% 4%; 
-}
-.play_again:hover {
-	color:#AC2318
+.step_2 {
+	position: relative; /* Change to relative positioning */
+	font-family: 'coiny';
+	color: #AC2318;
+    font-size: 60px; /* Adjust font size for larger screens */
+    z-index: 2;
+	margin-left: 50px; 
 }
 
+.next_buttons {
+    position: absolute;
+    top: 80%; /* Adjust vertically as needed */
+    right: 20px; /* Align to the right side */
+    transform: translateY(-50%); /* Center vertically */
+}
 .food_grid ul {
 	display: flex;
 	width: 100%;
@@ -397,6 +426,7 @@ body, html {
 
 .content_container {
     position: absolute;
+	font-family: 'coiny', 'coming soon';
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
