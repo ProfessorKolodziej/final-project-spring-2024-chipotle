@@ -89,7 +89,7 @@ button {
     z-index: 2;
 	display: inline-block;
 	padding: 10px 20px;
-	background-color: #441500; /* Primary color */
+	background-color: #441500; /* rimary color */
 	color: white;
 	font-size: 25px;
 	font-family: 'coiny';
@@ -245,6 +245,8 @@ button {
 		top: 50%;
 		left: 50%;
 		transform: translate(-45%, -80%);
+		z-index: -1; /* Ensure background image stays behind content */
+
 	}
 }
 
@@ -365,9 +367,10 @@ button {
 	
 	#all_bowl {
 		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-45%, -80%);
+		z-index: -1;
+		max-width: 90%; /* Limit the width to fit within the device */
+        height: auto; /* Maintain aspect ratio */
+        margin: 20px auto; /* Center horizontally and add space at the top */
 	}
 	
 	
@@ -498,6 +501,8 @@ button {
 
 .bowl_image:hover, .burrito_image:hover, .lifestyle_bowl_image:hover, .white_rice_image:hover, .brown_rice_image:hover, .black_beans_image:hover, .pinto_beans_image:hover, .steak_image:hover, .beef_image:hover, .veggies_image:hover, .chicken_image:hover, .sour_cream_image:hover, .cheese_image:hover, .hot_salsa_image:hover, .corn_image:hover, .guac_image:hover, .queso_image:hover, .salsa_image:hover, .green_salsa_image:hover, .lettuce_image:hover {
 	box-shadow: 0 0 10px rgba(65, 4, 4, 0.5);
+	z-index: 2; /* Ensure background image stays behind content */
+
 }
 
 .burrito_image {
@@ -547,10 +552,13 @@ button {
 .sour_cream_image {
 	max-height: 100%;
 	width: 100px;
+	z-index: 2; /* Ensure background image stays behind content */
 }
 .cheese_image {
 	max-height: 100%;
 	width: 100px;
+	z-index: 2; /* Ensure background image stays behind content */
+
 }
 .hot_salsa_image {
 	max-height: 100%;
@@ -578,14 +586,24 @@ button {
 }
 
 #all_bowl {
-	width: 600px;
+	width: 900px;
   	position: fixed;
-  	top: -20px; /* Adjust the value as needed */
+  	top: -100px; /* Adjust the value as needed */
+	z-index: -1;
+}
+#all-bowl {
+	width: 900px;
+  	position: fixed;
+  	top: -100px; /* Adjust the value as needed */
+	z-index: -1;
 }
 
-#all_burrito {
-	max-height: 100%;
-	width: 500px;
+#all-burrito {
+  	position: fixed;
+	width: 800px; /* Set the desired width */
+	height: 800px; /* Set the desired height */
+	top: 00px; /* Adjust the value as needed */
+	z-index: -1;
 }
 
 svg #empty_bowl {
@@ -900,15 +918,6 @@ h2 {
 	width: 100%;
 }
 
-#all-bowl {
-	max-height: 100%;
-	width: 500px;
-}
-
-#all-burrito {
-	max-height: 100%;
-	width: 500px;
-}
 
 svg #empty-bowl {
 	display:block;
@@ -1012,4 +1021,8 @@ body {
 .item-text {
 	display: none; /* Hide text by default */
 	text-align: center; /* Center text */
+}
+
+.item4 ul {
+	align-items:
 }

@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (nextBtn) {
         nextBtn.addEventListener('click', function () {
             if (sectionIndex === totalSections) {
-                window.location.href = 'bye.html';
+                window.location.href = 'byex.html';
             } else {
                 sectionIndex = Math.min(totalSections, sectionIndex + 1);
                 showSection(sectionIndex);
