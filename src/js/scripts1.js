@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add event listener to navigate to the next page when clicked
     startButton.addEventListener("click", function() {
-        window.location.href = "/pages/step_1.html";
+        window.location.href = "pages/step_1.html";
     });
     // Append the button to the main element with class "content_container"
     let contentContainer = document.querySelector(".content_container");
